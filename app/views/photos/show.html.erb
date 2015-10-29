@@ -1,0 +1,10 @@
+<h1>Photo Details</h1>
+
+<img src="<%= Photo.find(@id).source %>" width="50%">
+
+<p><%= Photo.find(@id).caption %></p>
+
+<a href="http://localhost:3000/photos/">Back</a>
+<a href="http://localhost:3000/photos/<%= @id %>/edit">Edit</a>
+<a href="http://localhost:3000/delete_photo/<%= @id %>">Delete</a>
+
